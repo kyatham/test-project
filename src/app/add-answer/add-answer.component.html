@@ -1,0 +1,4 @@
+<div *ngIf="answers" class="add-answer">
+    <input type="text" class="add-answer-item add-text" [(ngModel)]="currentAnswer" placeholder="Add your Answer here"/>
+    <button class="add-answer-item add-button" (click) = "addAnswer($event)">Add answer!</button>
+</div>

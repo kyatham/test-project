@@ -1,0 +1,4 @@
+<div *ngIf="user" class="user-info">
+    <img class="user-item" *ngIf="user.Avatar" [src]="user.Avatar" width="20px" height="20px" />
+    <div class="user-item user-name" *ngIf="user.Name">{{user.Name + ' ' + (user.Surname ? user.Surname : '')   }}</div>
+</div>

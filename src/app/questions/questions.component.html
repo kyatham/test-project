@@ -1,0 +1,11 @@
+
+<h1>My Questions</h1>
+<ul class="questions">
+    <li class="question" *ngFor="let question of questions">
+        <h1>
+            <a routerLink="/detail" [queryParams]="{id:question.Id | json }">{{question.Id}}</a> 
+        </h1>
+        <app-question-detail [question]="question"></app-question-detail>
+    </li>
+</ul>
+ 

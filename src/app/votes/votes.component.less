@@ -1,0 +1,22 @@
+.votes-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .vote {
+        margin: 20px;
+        cursor: pointer;
+        .vote-count {
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        svg {
+            fill: grey;
+            &.upvote-svg {
+                fill: green;
+            }
+            &.downvote-svg {
+                fill: red;
+            }
+        }
+    }
+}
