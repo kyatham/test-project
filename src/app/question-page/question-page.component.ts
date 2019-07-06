@@ -20,7 +20,7 @@ export class QuestionPageComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
-      this.id = JSON.parse(params.id);
+      this.id = params.id;
     });
   }
 

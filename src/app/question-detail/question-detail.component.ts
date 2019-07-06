@@ -18,11 +18,6 @@ export class QuestionDetailComponent implements OnInit {
   @Input() question;
 
   ngOnInit() {
-    if (!this.question) {
-      this.route.params.subscribe(params => {
-        this.question = JSON.parse(params.question);
-      });
-    }
   }
 
 }
