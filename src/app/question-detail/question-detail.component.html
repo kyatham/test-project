@@ -1,5 +1,5 @@
 
-<div class="question-detail">
+<div *ngIf="question" class="question-detail">
   <div [innerHTML]="question.Text"></div>
   <app-votes [votedItem]="question"></app-votes>
   <div *ngIf="question.answers && question.answers.length === 0"><b>No Answers to display!</b></div>
